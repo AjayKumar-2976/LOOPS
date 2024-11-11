@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    //NESTED IF
+    
+    let inp1 = prompt("ENTER THE NAME")
+    let inp2 = prompt("ENTER THE PASSWORD")
+    let inp3 = prompt("ENTER THE EMAIL")
+
+    if(inp1 == "ajay" && inp2 == "password"){
+    if(inp3 == "ajay.@gmail.com"){
+        alert("LOGIN SUCCESSFULL") 
+    }
+alert("LOGIN SUCCESSFULL")
+
+}
+else{
+    alert("LOGIN NOT SUCCESSFULL")
+
+}
+    
+//NESTED ELSE IF
+
+let score = 90
+let grade;
+
+if (score >= 90) {
+console.log("A GRADE");
+
+} else if (score >= 80) {
+    console.log("B GRADE");
+    
+ 
+} else if (score >= 70) {
+    console.log("C GRADE");
+
+} else if (score >= 60) {
+    console.log("D GRADE");
+    
+} else {
+    console.log("FAIL");
+    
+}
+
+
+    
+    
+    // NESTED FOR
+    let a=5;
+    for(let i=1; i<=a; i++){
+        for(let j=1;j<=5;j++){
+            console.log(i + "*"+ j + "=" + i*j);
+
+        }   
+    }
+
+    
+//NESTED : switch
+
+const productCatg = prompt("enter the category: ")
+    const productType = prompt("enter the producttype: ")
+    switch (productCatg) {
+        case "electronics":
+            switch (productType) {
+                case "mobile": console.log("5% Discount"); break;
+                case "laptop": console.log("10% Discount"); break;
+            }
+            break;
+
+        case "clothing":
+            switch (productType) {
+                case "men": console.log("15% Discount"); break;
+                case "women": console.log("20% Discount"); break;
+            }
+            break;
+
+
+        case "grocery":
+            switch (productType) {
+                case "fruits": console.log("5% Discount"); break;
+                case "vegetables": console.log("10% Discount"); break;
+
+            }
+            break;
+    }
+   
+//WHILE 
+    let i= 5;
+while (i <= 10) {
+  let j = 1;
+  console.log(`Multiplication table for ${i}:`);
+  
+  while (j <= 5) {
+    console.log(`${i} x ${j} = ${i * j}`);
+    j++;
+  }
+  
+  console.log('\n'); // Blank line between tables
+  i++;
+}
+
+//DO WHILE
+let num = "2312"
+let repeated = ""
+let count =0
+let i1=0
+do{
+  if(num[i1] == 2){
+    count++
+  }
+  i1++
+}
+while(num.length>i1)
+console.log(count);
+
+
+
+let num1 =20;
+let a1 = 1
+do{
+    console.log(num1);
+    num1--
+}
+while(num1>=a1)
+
+
+</script>
+</html>
